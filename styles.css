@@ -1,0 +1,60 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Section styling */
+.section {
+    position: relative;
+    padding: 2rem 1rem 1rem 1rem;
+    border: 2px solid black;
+    min-height: 150px;
+}
+
+/* Section title styling */
+.section-title {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.8);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+/* Section colors */
+.red { background-color: #ffcccc; }
+.blue { background-color: #cce0ff; }
+.green { background-color: #ccffcc; }
+
+/* Responsive layout */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .section {
+        flex: 1;
+    }
+}
